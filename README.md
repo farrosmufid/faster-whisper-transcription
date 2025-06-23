@@ -1,4 +1,4 @@
-# Whisper Live Transcription App
+# Faster Whisper Transcription Service
 
 A real-time audio transcription application that uses Faster Whisper to provide live speech-to-text with automatic language detection and streaming capabilities.
 
@@ -39,8 +39,8 @@ A real-time audio transcription application that uses Faster Whisper to provide 
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd whisper_live_practice
+   git clone <your-repository-url>
+   cd faster_whisper_transcription
    ```
 
 2. **Install Python dependencies**
@@ -158,17 +158,27 @@ The application includes comprehensive debug logging:
 
 ### Project Structure
 ```
-whisper_live_practice/
+faster_whisper_transcription/
 ├── app.py                    # Flask backend server
 ├── requirements.txt          # Python dependencies
 ├── package.json             # Node.js dependencies
+├── package-lock.json        # Node.js dependency lock file
+├── tsconfig.json           # TypeScript configuration
 ├── src/
 │   ├── App.tsx              # Main React component with tabs
-│   ├── components/
-│   │   └── LiveTranscription.tsx  # Live transcription component
-│   └── index.tsx            # React entry point
+│   ├── App.css              # Main application styles
+│   ├── index.tsx            # React entry point
+│   └── components/
+│       └── LiveTranscription.tsx  # Live transcription component
 ├── public/
 │   └── index.html           # HTML template
+├── test_app.py              # Flask application tests
+├── test_live_transcription.py  # Live transcription tests
+├── test_faster_whisper.py   # Faster Whisper model tests
+├── whisper_test.py          # Whisper functionality tests
+├── start.sh                 # Linux/Mac startup script
+├── start.bat                # Windows startup script
+├── .gitignore               # Git ignore file
 └── README.md                # This file
 ```
 
